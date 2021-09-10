@@ -30,7 +30,7 @@ RUN mkdir /home/${USER}/offline \
 && source /home/${USER}/offline/env.sh \
 && cd /home/${USER}/offline/build \
 && cmake /home/${USER}/src/  \
-&& make -j10 \
+&& make -j4 \
 && make install \
 && echo 'eval `$JEMEUSOOFFLINEROOT/bin/jemeuso-offline-config --env-sh`'>> /home/${USER}/offline/env.sh \
 && rm -r -f /home/${USER}/offline/build \
